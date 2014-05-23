@@ -1,5 +1,5 @@
-/* global app:true */
 'use strict';
+/* global app:true */
 
 var app = angular.module('angNewsApp', [
   'ngCookies',
@@ -7,17 +7,8 @@ var app = angular.module('angNewsApp', [
   'ngSanitize',
   'ngRoute'
 ])
-app.config(function ($routeProvider){});
 
-
-angular
-  .module('angNewsApp', [
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
-    'ngRoute'
-  ])
-  .config(function ($routeProvider) {
+  app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/posts.html',
