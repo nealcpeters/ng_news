@@ -10,13 +10,13 @@ var app = angular.module('angNewsApp', [
 ])
 .constant('FIREBASE_URL', 'https://sweltering-fire-4384.firebaseio.com');
 
-  app.config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/posts.html',
-        controller: 'PostsCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+app.config(function ($routeProvider) {
+  $routeProvider
+    .when('/', {
+      templateUrl: 'views/posts.html',
+      controller: 'PostsCtrl'
+    })
+    .otherwise({
+      redirectTo: '/'
+    });
+});
