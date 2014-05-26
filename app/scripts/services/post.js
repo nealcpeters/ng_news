@@ -18,6 +18,5 @@ app.factory('Post',
         return posts.$remove(postId);
       }
     };
-  });
   return Post;
 });

@@ -7,8 +7,9 @@ var app = angular.module('angNewsApp', [
   'ngSanitize',
   'ngRoute',
   'firebase'
-])
-.constant('FIREBASE_URL', 'https://sweltering-fire-4384.firebaseio.com');
+]);
+
+app.constant('FIREBASE_URL', 'https://PUT-YOUR-FIREBASE-URL-HERE.firebaseio.com/');
 
 app.config(function ($routeProvider) {
   $routeProvider
