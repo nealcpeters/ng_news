@@ -19,6 +19,5 @@ app.factory('Post',
       }
     };
   });
- 
   return Post;
 });
